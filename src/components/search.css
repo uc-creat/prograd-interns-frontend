@@ -1,0 +1,32 @@
+.background{
+    background-image:url("https://cdn.shopify.com/s/files/1/0969/9128/collections/black-and-white.jpg?v=1441963817");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  
+  .containers{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    width:500px;
+    height: 30px;
+    position:absolute;
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-right:45em;
+    top: 10em;
+    
+   /* padding:100px;*/
+  }
+  input[type=text]{
+  
+    width: 100%;
+    height: 30px
+  }
+  @media screen and (max-width: 600px) {
+.containers{
+    margin-left:0;
+    width: 400px;
+}
+  }

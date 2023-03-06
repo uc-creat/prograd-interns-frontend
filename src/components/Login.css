@@ -1,0 +1,64 @@
+
+  .container-box{
+      border: 5px solid black;
+      position: fixed;
+      background-color: beige;
+      top: 40%;
+      left:40%;
+      right:20%;
+      width:fit-content;
+      max-width: 300px;
+      height:fit-content; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+  .popup{
+   
+    position: relative;
+    width:100%;
+    background-color: beige;
+    max-width: 300px;
+    color: black;
+  }
+  .close-submit{
+    width:100px;
+    height:30px;
+    border-radius: 10px;
+  }
+  .popup .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: radius 20px; ;
+   
+}
+
+
+#btn{
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border:1px solid ;
+}
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .login-open-btn{
+    border-radius: 10px;
+    height: 40px;
+    width:65px;
+  }
+  @media screen and (max-width: 600px) {
+    .container-box{
+      
+      top: 40%;
+      left:20%;
+      right:20%;
+    }
+  }
