@@ -12,6 +12,10 @@ function PopUp(props) {
 
     const onSignUp = (e)=>{
         e.preventDefault();
+        if(confirmPassword!= password){
+            setError("Password doesnt match");
+            return 
+        }
         const user={
             firstName: firstName,
             lastName: lastName,
@@ -19,17 +23,6 @@ function PopUp(props) {
             password: password,
         };
         console.log(user);
-    }
-
-    const checkValidation=(e)=>{
-        
-        setConfirmPassword(e.target.value);
-        if(password != confirmPassword){
-            setError("Confirm password should match with password")
-        }
-        else{
-            setError("");
-        }
     }
 
     return (props.trigger)?(
@@ -80,7 +73,7 @@ function PopUp(props) {
                     <input 
                     type="password" 
                     value={confirmPassword}
-                    onChange={(e)=> checkValidation(e)}
+                    onChange={(e)=> setConfirmPassword(e.target.value)}
                     required/>
                     </p>
 
