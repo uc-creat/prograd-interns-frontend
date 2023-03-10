@@ -1,0 +1,82 @@
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"; */
+
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.popup-inner{
+    position:relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
+}
+
+.popup-inner .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: radius 20px; ;
+   
+}
+
+
+#btn{
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border:1px solid ;
+}
+
+div button:hover{
+    background-color:black;
+    color: #fff;
+  }
+
+.ip{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+div input:hover{
+   
+    background-color: rgba(0, 0, 0, 0.1);
+} 
+
+/* .input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    transition: opacity 0.5s;
+    padding: 10px;
+    /* color: ; 
+    min-width: 50px;
+    text-align: center;
+    
+}
+  
+.input-field {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    border:1px solid ;
+} */

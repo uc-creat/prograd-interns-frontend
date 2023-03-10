@@ -1,0 +1,34 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Fira Sans',sans-serif;
+}
+
+
+li {
+  float: right;
+}
+
+ul {
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(175, 174, 174);
+}
+
+li {
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div button:hover{
+  background-color:gray;
+}
