@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Login from "./components/loginbutton"
 import SearchBar from './components/Searchbar'
-import axios from 'axios'
+import Images from "./components/API"
 
-const api = axios.create({
-  baseURL:'http://localhost:3000'
-})
+//secret key:psRZS85EbYI_azLKhCnAsIA1wvJTJoxA5wTnQBUWHSg
+//acess key:c_5GHI_6hF96HjT0v20zprIiaReqSrttWSWXTYxAw5Y
+//api: https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY
 function App() {
   
   return (
@@ -17,7 +17,10 @@ function App() {
         
       </ul>
       <SearchBar/>
-
+      <div className='grid-container'>
+      <Images />
+      </div>
+      
        
     </div>
   );

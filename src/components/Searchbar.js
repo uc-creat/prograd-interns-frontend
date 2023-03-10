@@ -4,7 +4,7 @@ function searchBar(){
     return (
         <>
         <div className="background">
-        <div className="containers" >
+        <div className="containerSearchBar" >
           <input type="text" name="Search"/>
           <button type="submit" >Submit</button>
         </div>         

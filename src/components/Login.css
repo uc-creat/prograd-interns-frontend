@@ -1,24 +1,54 @@
+/*search bar
+.background{
+  background-image:url("https://cdn.shopify.com/s/files/1/0969/9128/collections/black-and-white.jpg?v=1441963817");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+.containerSearchBar{
+  display:flex;
+  justify-content: center;
+  align-items: stretch;
+  width:500px;
+  height: 30px;
+  position:absolute;
+  border: 1px solid black;
+  margin-left: 30%;
+  margin-right:45em;
+  top: 20em;
+  z-index: 1;
+ /* padding:100px;*/
+/*}
+input[type=text]{
+
+  width: 100%;
+  height: 30px
+}*/
+/*login*/
   .container-box{
-      border: 5px solid black;
-      position: fixed;
-      background-color: beige;
-      top: 40%;
-      left:40%;
-      right:20%;
-      width:fit-content;
-      max-width: 300px;
-      height:fit-content; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
     
+    position: fixed;
+    /*background-color: beige;*/
+    top: 0;
+    left:0;
+    /*right:20%;*/
+    width:100%;
+    /*max-width: 300px;*/
+    height:100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* z-index: 4;*/
+
     }
   .popup{
    
     position: relative;
     width:100%;
-    background-color: beige;
+    background-color: #fff;
     max-width: 300px;
     color: black;
   }
@@ -57,8 +87,8 @@
   @media screen and (max-width: 600px) {
     .container-box{
       
-      top: 40%;
-      left:20%;
-      right:20%;
+      top: 0;
+      left:0;
+      
     }
   }
