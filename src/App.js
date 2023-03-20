@@ -1,24 +1,17 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css';
+import NavBar from './Dropdown/navBar';
 
-import Login from "./components/login"
+import Homepage from './components/homepage';
 
-import PopUp from './components/SignUp';
 
 function App() {
-
-  const [buttonPopup,setButtonPopup]=useState(false);
 
   return (
     
     <div className="App">
-      <ul>
-        <li> <Login/></li>
-        <li>
-        <button onClick={()=>setButtonPopup(true)}>Signup</button>
-        <PopUp trigger={buttonPopup} setTrigger={setButtonPopup}/>
-        </li>
-      </ul>       
+      <Homepage/>      
+      {/* <NavBar/> */}
     </div>
     
   );

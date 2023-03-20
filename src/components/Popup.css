@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index: 3;
 }
 
 .popup-inner{
@@ -20,6 +20,7 @@
     width: 100%;
     max-width: 640px;
     background-color: #fff;
+
 }
 
 .popup-inner .close-btn{
@@ -47,7 +48,7 @@ div button:hover{
     position: relative;
     width: 100%;
     text-align: center;
-    z-index: 1;
+    
 }
 
 div input:hover{

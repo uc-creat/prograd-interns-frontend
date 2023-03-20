@@ -10,9 +10,9 @@ function PopUp(props) {
     const [confirmPassword,setConfirmPassword]=useState("");
     const [error,setError]=useState("")
 
-    const onSignUp = (e)=>{
+    async function onSignUp(e){
         e.preventDefault();
-        if(confirmPassword!= password){
+        if(confirmPassword !== password){
             setError("Password doesnt match");
             return 
         }
@@ -23,6 +23,18 @@ function PopUp(props) {
             password: password,
         };
         console.log(user);
+
+        let result = await fetch("http://localhost:8080/signup",{
+            method:'POST',
+            body:JSON.stringify(user),
+            headers:{
+                "content-Type":'application/json',
+                "Accept":'application/json'
+            }
+            
+        })
+        result = await result.json()
+        console.log("result",result)
     }
 
     return (props.trigger)?(
