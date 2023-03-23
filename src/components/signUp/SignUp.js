@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import './Popup.css'
+import './signUp.css'
 
 function PopUp(props) {
 
@@ -11,10 +11,13 @@ function PopUp(props) {
     const [error,setError]=useState("")
 
     async function onSignUp(e){
-        e.eventDefault();
+        e.preventDefault();
         if(confirmPassword !== password){
             setError("Password doesnt match");
             return 
+        }
+        else{
+            setError(""); 
         }
         const user={
             firstName: firstName,
@@ -22,9 +25,9 @@ function PopUp(props) {
             email:email,
             password: password,
         };
-        console.log(user);
+       
 
-        let result = await fetch("http://localhost:8080/signup",{
+        let result = await fetch("https://jsonplaceholder.typicode.com/users",{
             method:'POST',
             body:JSON.stringify(user),
             headers:{
@@ -38,7 +41,7 @@ function PopUp(props) {
     }
 
     return (props.trigger)?(
-        <div className='popup'>
+        <div className='popup-outer'>
             <div className='popup-inner'>
                 <button id="btn" className='close-btn' onClick={()=>props.setTrigger(false)}>close</button>
                 {props.children}
