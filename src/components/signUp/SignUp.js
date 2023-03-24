@@ -17,7 +17,7 @@ function PopUp(props) {
             return 
         }
         else{
-            setError(""); 
+            props.setTrigger(false);
         }
         const user={
             firstName: firstName,
